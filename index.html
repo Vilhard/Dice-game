@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="media.css" />
+    <title>Dice Game</title>
+  </head>
+  <body class="stage-start">
+    <div id="startscreen" class="start-screen">
+      <h1>Dice Game</h1>
+      <label for="player--amount" class="amount">Player amount:</label>
+      <input class="input" type="text" id="player--amount" name="player--amount"> 
+    </br>
+      <label for="goal--amount" class="amount goal-text">Score to win:</label>
+      <input class="input goal" type="text" id="goal--amount">
+      <button id="start-game" class="btn">Start game</button>
+    </div>
+      <main>
+        <button class="btn btn--new hidden">🔄</button>
+       <div id="players"></div> 
+      </main>
+    <script src="script.js"></script>
+  </body>
+</html>

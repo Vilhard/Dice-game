@@ -1,0 +1,95 @@
+@import url("style.css");
+@media only screen and (min-width: 1500px) {
+  .players--10 {
+    grid-template-columns: repeat(5, 2fr);
+  }
+    .players--9 {
+      grid-template-columns: repeat(10, 1fr);
+    }
+    .players--6 {
+      grid-template-columns: repeat(8, 1fr);
+    }
+    .player--6, .player--9 {
+      grid-column: span 2;
+    }
+    .player--9:nth-child(6n) {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+    .player--6:nth-child(5n) {
+      grid-column-start: 2;
+      grid-column-end: 5;
+    }
+    .player--6:last-child {
+      grid-column-start: 5;
+      grid-column-end: 8;
+    }
+    .players--5 {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  @media only screen and (max-width: 1500px) and (min-width: 1124px)  {
+    .players--9, .players--10 {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .players--4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .players--5 {
+      grid-template-columns: repeat(6, 1fr);
+  }
+    .player--9, .player--10, .player--5 {
+      grid-column: span 2;
+    }
+    .player--10:nth-child(9n) {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .player--9:last-child {
+      grid-column-start: 4;
+      grid-column-end: 6;
+    }
+    .player--5:nth-child(4n) {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+  }
+  @media only screen and (min-width: 1124px) {
+    .players--8 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .players--7 {
+      grid-template-columns: repeat(8, 1fr);
+    }
+    .player--7 {
+      grid-column: span 2;
+    }
+    .player--7:nth-child(5n) {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+  }
+  @media only screen and (max-width: 1124px) and (min-width: 600px)  {
+    .players--5, .players--3, .players--7, .players--9  {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .player--3:last-child {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+    .player--5:last-child {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+    .player--7:last-child {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+    .player--9:last-child {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+    .player--3, .player--5, .player--7, .player--9 {
+      grid-column: span 2;
+    }
+  }
