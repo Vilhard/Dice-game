@@ -133,10 +133,11 @@ var Game = {
         const scores = document.querySelectorAll('.score');
         scores.forEach(score => score.textContent = 0);
         Game.players.forEach(player => {
-            Game.players[0].index === player.index ? 
+            Game.players[0].index === player.index ?
                 player.activate() : player.deactivate();
             player.element.getElementsByClassName('current-score')[0].textContent = 0;
             player.score = 0;
+            player.currentScore = 0;
             if (player.isWinner) {
                 player.element.classList.remove('player--winner');
                 player.element.getElementsByClassName('name')[0].textContent = player.name;
